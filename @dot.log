@@ -1,0 +1,84 @@
+# 9/28/22, 9:31:42 PM IDT
+# Eclipse Compiler for Java(TM) v20220831-1439, 3.31.0, Copyright IBM Corp 2000, 2020. All rights reserved.
+----------
+1. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 6)
+	import javax.xml.parsers.DocumentBuilder;
+	       ^^^^^^^^^^^^^^^^^
+The package javax.xml.parsers is accessible from more than one module: <unnamed>, java.xml
+----------
+2. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 7)
+	import javax.xml.parsers.DocumentBuilderFactory;
+	       ^^^^^^^^^^^^^^^^^
+The package javax.xml.parsers is accessible from more than one module: <unnamed>, java.xml
+----------
+3. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 8)
+	import javax.xml.parsers.ParserConfigurationException;
+	       ^^^^^^^^^^^^^^^^^
+The package javax.xml.parsers is accessible from more than one module: <unnamed>, java.xml
+----------
+4. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 15)
+	import org.w3c.dom.Document;
+	       ^^^^^^^^^^^
+The package org.w3c.dom is accessible from more than one module: <unnamed>, java.xml
+----------
+5. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 16)
+	import org.xml.sax.InputSource;
+	       ^^^^^^^^^^^
+The package org.xml.sax is accessible from more than one module: <unnamed>, java.xml
+----------
+6. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 17)
+	import org.xml.sax.SAXException;
+	       ^^^^^^^^^^^
+The package org.xml.sax is accessible from more than one module: <unnamed>, java.xml
+----------
+7. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 25)
+	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	^^^^^^^^^^^^^^^^^^^^^^
+DocumentBuilderFactory cannot be resolved to a type
+----------
+8. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 25)
+	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	                                 ^^^^^^^^^^^^^^^^^^^^^^
+DocumentBuilderFactory cannot be resolved
+----------
+9. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 26)
+	DocumentBuilder builder;
+	^^^^^^^^^^^^^^^
+DocumentBuilder cannot be resolved to a type
+----------
+10. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 29)
+	} catch (ParserConfigurationException e) {
+	         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ParserConfigurationException cannot be resolved to a type
+----------
+11. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 32)
+	InputSource is = new InputSource(new StringReader("<a>READING XML</a>"));
+	^^^^^^^^^^^
+InputSource cannot be resolved to a type
+----------
+12. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 32)
+	InputSource is = new InputSource(new StringReader("<a>READING XML</a>"));
+	                     ^^^^^^^^^^^
+InputSource cannot be resolved to a type
+----------
+13. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 33)
+	Document parsed;
+	^^^^^^^^
+Document cannot be resolved to a type
+----------
+14. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 36)
+	} catch (SAXException | IOException e) {
+	         ^^^^^^^^^^^^
+SAXException cannot be resolved to a type
+----------
+15. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 36)
+	} catch (SAXException | IOException e) {
+	         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+No exception of type Object can be thrown; an exception type must be a subclass of Throwable
+----------
+16. ERROR in D:\TestPlugin\src\testplugin\handlers\SampleHandler.java (at line 37)
+	throw new ExecutionException("Error", e);
+	      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor ExecutionException(String, Object) is undefined
+----------
+16 problems (16 errors)

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TestPlugin
+Bundle-SymbolicName: TestPlugin;singleton:=true
+Bundle-Version: 10.0.0.qualifier
+Bundle-Activator: testplugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.teamcenter.rac.common
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: TestPlugin
+Bundle-ActivationPolicy: lazy
